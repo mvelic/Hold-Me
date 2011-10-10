@@ -1,0 +1,92 @@
+/*   
+Theme Name: Hold Me
+Theme URI: http://mattvelic.com
+Description: A placeholder theme for a web site that is coming soon.
+Version: 1 (WP 3.2.1)
+Author: Matt Velic
+Author URI: http://mattvelic.com
+Tags: HTML5, CSS3, jQuery, Responsive Design, Coming Soon, Placeholder
+*/
+
+/* THEME RESET */
+* {margin: 0; padding: 0;}
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* TYPOGRAPHY */
+/* Rough Scale - 18pt Calibri : 16pt Trebuchet MS : 15pt Impact */
+html {font: 18px/1.5 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+h1 {font: 2.618em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 0.572; margin: 0.572em 0;}
+h2, h3 {font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal;}
+h2 {font-size: 1.618em; line-height: 0.927; font-style: italic; margin: 0.927em 0;}
+h3 {font-size: 1.333em; line-height: 1.125; margin: 1.125em 0;}
+p, ul, ol, img, blockquote {margin: 1.5em 0;}
+header, footer {text-align: center;}
+.user-message, footer {font-size: 0.824em; line-height: 1.82; margin: 1.82em 0;}
+.theme-tester ul, .stay-tuned ul {list-style-type: none;}
+.message p:first-line {font-size: 1.333em; line-height: 1.125;}
+
+/* COLOR */
+body {background-color: #ccc; background-image: url('img/little_pluses.png'); color: #333;}
+.theme-tester {background-color: #333;}
+.main-content {background-color: #fcfcfc;}
+h1, h2, h3 {color: #ec6d13;}
+.theme-tester h3 {color: #fcfcfc;}
+a:link, a:visited, a:active {color: #0776a0;}
+a:hover {color: #ec6d13;}
+.user-message {color: #555;}
+.success {color: green;}
+.failure {color: red;}
+footer {color: #000;}
+footer a:link, footer a:visited, footer a:active {color: #000;}
+footer a:hover {color: #333;}
+
+/* BASIC LAYOUT */
+.theme-tester {padding: 0 1em; overflow: hidden;}
+.theme-tester h3, .theme-tester ul {float: left; margin: 0; padding: .2em .5em .2em 0;}
+.main-content {width: 36em; margin: 1.5em auto; padding: 0 6em; overflow: hidden;}
+header {margin: 1.5em 0;}
+h1 {position: absolute; margin-left: -9999px;}
+h1.no-logo {position: relative; margin-left: 0;}
+.social {float: none; clear: both; margin: 1.5em 0;}
+.user-message {float: left;}
+
+/* MAILCHIMP FORM */
+form {float: left; margin-right: 1em;}
+form label {display: inline-block; font-size: 1em; font-weight: bold; margin-right: 1em;}
+form input.email {display: inline-block; border: 1px solid #888; padding: .5em; margin-right: 1em; width: 16em; height: 1.5em;}
+form input.email:focus {border-color:#333;}
+form input.button {display: inline-block; width: 8em; background-color: #888; border: 0 none; color: #fff; font-size: 1em; padding: .35em 0; text-align: center;}
+form input.button:hover {background-color:#666; cursor: pointer;}
+
+/* MEDIA QUERIES FOR ADVANCED BROWSERS */
+@media screen and (max-width: 2560px) {
+    /* TYPOGRAPHY */
+    h2:before {content: "\203A \00a0"; margin-left: -.7em;}
+    h3:before {content: '\00bb \00a0'; margin-left: -.9em;}
+    .theme-tester h3:before {content: ""; margin-left: 0;}
+
+    /* LAYOUT */
+    .main-content { -webkit-border-radius: 1em; -khtml-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em; -webkit-box-shadow: 0 0 1.5em #333; -moz-box-shadow: 0 0 1.5em #333; box-shadow: 0 0 1.5em #333;}
+    form input.email, form input.button { -webkit-border-radius: .5em; -khtml-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em;}
+    .social {float: right; clear: none; width: 5em; margin: 0 0;}
+    .social li a {display: inline-block; float: left; margin-left: .5em; background-image: url('img/social_sprite.jpg'); width: 32px; height: 32px; text-indent: -9999px;}
+    .social li a.facebook {background-position: -33px 0px;}
+    .social li a.twitter {background-position: -64px 0px;}
+}
+
+@media screen and (max-width: 960px) {
+    /* COLOR */
+    body {background-color: #fcfcfc; background-image: none;}
+    footer {color: #333;}
+
+    /* LAYOUT */
+    .main-content {width: 76%; margin: 0 auto; padding: 0 2em; overflow: hidden; -webkit-border-radius: 0; -khtml-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+    .social {float: none; margin: .75em 0 .75em 0;}
+    .user-message {float: none; clear: both;}
+
+    /* MAILCHIMP FORM */
+    form {float: none; margin-right: 0;}
+    form label {display: block; margin: 0 0 0 0;}
+    form input.email {display: block; margin: .75em 0 .75em 0;}
+    form input.button {display: block;}
+}
